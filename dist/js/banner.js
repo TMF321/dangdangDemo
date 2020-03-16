@@ -1,3 +1,4 @@
+define(['jquery'], function($){
 function bannerTab(){
     var Ul = $('.play').find('.imgBox');
     var Btns = $('.play').find('ol li');
@@ -19,24 +20,19 @@ function bannerTab(){
 
         //封装一个切换函数
         function tab(){
-            Btns.removeClass('active').eq(iNow).addClass('active');
-            if(iNow == 10){
-                Btns.eq(0).addClass('active');
-            }
-            Ul.animate({left: -iNow * 750},800,function(){
-                if(iNow == 10){
-                    Ul.css('left', -750);
-                    iNow = 0;
-                }
-                if(iNow == 0){
-                    Ul.css('left', 10 * -750);
-                    iNow = 10;
-                }
-            });
+        Btns.removeClass("active").eq(iNow).addClass("active");
+        if(iNow == Btns.size()){
+            Btns.eq(0).addClass("active");
         }
-
         
-
+        Ul.animate({top: -315 * iNow}, 500, function(){
+            if(iNow == Btns.size()){
+                //直接将图片拉回第一张，继续开始
+                Ul.css("top", 0);
+                iNow = 0;
+            }
+        });
+    }
         //移入移出
         $('.play').mouseenter(function(){
             clearInterval(timer);
@@ -46,20 +42,8 @@ function bannerTab(){
                 tab();
             },2000);
         })
-
-
-
-        //添加左右切换
-
-        $('.leftRightTabs').find('a').click(function(){
-            if(this.className == 'left'){
-                iNow--;
-                tab();
-            }else{
-                //右
-                iNow++;
-                tab();
-            }
-            return false;//阻止默认行为
-        })
     }
+    return {
+        bannerTab: bannerTab
+    }
+})
