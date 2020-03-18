@@ -1,1 +1,525 @@
-ghhhjjjjjmjn
+[
+     {
+        "title": "主打",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-1-1.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-1-2.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-1-3.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-1-4.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-1-5.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-1-6.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-1-7.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-1-8.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-1-9.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-1-10.jpg"
+            }
+        ]
+    },{
+        "title": "童书1",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-1.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-2.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-3.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-4.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-5.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-6.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-7.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-8.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-9.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-10.jpg"
+            }
+        ]
+    },{
+        "title": "童书2",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-11.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-12.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-13.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-14.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-15.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-16.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-17.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-18.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-19.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-20.jpg"
+            }
+        ]
+    },{
+        "title": "文艺",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-21.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-22.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-23.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-24.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-25.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-26.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-27.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-28.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-29.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-30.jpg"
+            }
+        ]
+    },{
+        "title": "小说",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-31.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-32.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-33.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-34.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-35.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-36.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-37.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-38.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-39.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-40.jpg"
+            }
+        ]
+    },{
+        "title": "青春励志",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-41.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-42.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-43.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-44.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-45.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-46.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-47.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-48.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-49.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-50.jpg"
+            }
+        ]
+    },{
+        "title": "社科",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-51.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-52.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-53.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-54.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-55.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-56.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-57.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-58.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-59.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-60.jpg"
+            }
+        ]
+    },{
+        "title": "生活",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-61.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-62.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-63.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-64.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-65.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-66.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-67.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-68.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-69.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-70.jpg"
+            }
+        ]
+    },{
+        "title": "教育",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-71.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-72.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-73.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-74.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-75.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-76.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-77.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-78.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-79.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-80.jpg"
+            }
+        ]
+    },{
+        "title": "电子书",
+        "childs": [
+            {
+                "title": "权威定本四大名著",
+                "price": 60.00,
+                "img": "images/2-81.jpg"
+            },
+            {
+                "title": "日本烛拉图技术",
+                "price": 45.00,
+                "img": "images/2-82.jpg1"
+            },
+            {
+                "title": "了不起的我",
+                "price": 30.50,
+                "img": "images/2-83.jpg"
+            },
+            {
+                "title": "烁树的：囚徒",
+                "price": 66.00,
+                "img": "images/2-84.jpg"
+            },
+            {
+                "title": "画家之眼",
+                "price": 25.50,
+                "img": "images/2-85.jpg"
+            },
+            {
+                "title": "范志红读本",
+                "price": 19.80,
+                "img": "images/2-86.jpg"
+            },
+            {
+                "title": "直击本质",
+                "price": 99.99,
+                "img": "images/2-87.jpg"
+            },
+            {
+                "title": "1001英语单词大书",
+                "price": 20.60,
+                "img": "images/2-88.jpg"
+            }, {
+                "title": "衣服里的秘密",
+                "price": 34.80,
+                "img": "images/2-89.jpg"
+            }, {
+                "title": "饥饿的石头",
+                "price": 50.20,
+                "img": "images/2-90.jpg"
+            }
+        ]
+    }
+]
+
+

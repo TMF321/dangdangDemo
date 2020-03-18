@@ -54,9 +54,18 @@ gulp.task('scss2',function(){
     .pipe(gulp.dest('dist/css'))
     .pipe(connect.reload())
 })
+gulp.task('scss3',function(){
+    return gulp.src('scss/fangdajing.scss')
+    .pipe(scss())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(minifyCSS())
+    .pipe(rename('fangdajing.min.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload())
+})
 
 
-gulp.task("build", ["copy-html", "images", "data","scripts","scss1","scss2"], function(){
+gulp.task("build", ["copy-html", "images", "data","scripts","scss1","scss2","scss3"], function(){
     console.log("项目建立成功");
 })
 
@@ -68,6 +77,7 @@ gulp.task('watch',function(){
         gulp.watch(['*.js','!gulpfile.js'],['scripts']);
         gulp.watch('scss/index.scss',['scss1']);
         gulp.watch('scss/reset.scss',['scss2']);
+        gulp.watch('scss/fangdajing.scss',['scss3']);
 })
 
 
