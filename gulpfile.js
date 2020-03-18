@@ -20,7 +20,11 @@ gulp.task('data', function(){
     .pipe(gulp.dest('dist/data'))
     .pipe(connect.reload());
 })
-
+gulp.task('php', function(){
+    return gulp.src(['*.php'])
+    .pipe(gulp.dest('dist'))
+    .pipe(connect.reload());
+})
 const concat = require("gulp-concat"); //合并文件
 const uglify = require("gulp-uglify");  //压缩
 
@@ -63,9 +67,35 @@ gulp.task('scss3',function(){
     .pipe(gulp.dest('dist/css'))
     .pipe(connect.reload())
 })
+gulp.task('scss4',function(){
+    return gulp.src('scss/login.scss')
+    .pipe(scss())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(minifyCSS())
+    .pipe(rename('login.min.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload())
+})
+gulp.task('scss5',function(){
+    return gulp.src('scss/register.scss')
+    .pipe(scss())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(minifyCSS())
+    .pipe(rename('register.min.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload())
+})
+gulp.task('scss6',function(){
+    return gulp.src('scss/bootstrap.scss')
+    .pipe(scss())
+    .pipe(gulp.dest('dist/css'))
+    .pipe(minifyCSS())
+    .pipe(rename('bootstrap.min.css'))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload())
+})
 
-
-gulp.task("build", ["copy-html", "images", "data","scripts","scss1","scss2","scss3"], function(){
+gulp.task("build", ["copy-html", "images","php", "data","scripts","scss1","scss2","scss3","scss4","scss5","scss6"], function(){
     console.log("项目建立成功");
 })
 
@@ -74,10 +104,14 @@ gulp.task('watch',function(){
         gulp.watch('*.html',['copy-html']);
         gulp.watch('*.{jpg,png}',['images']);
         gulp.watch(['*.json','!package.json'],['data']);
+        gulp.watch('*.php',['php']);
         gulp.watch(['*.js','!gulpfile.js'],['scripts']);
         gulp.watch('scss/index.scss',['scss1']);
         gulp.watch('scss/reset.scss',['scss2']);
         gulp.watch('scss/fangdajing.scss',['scss3']);
+        gulp.watch('scss/login.scss',['scss4']);
+        gulp.watch('scss/register.scss',['scss5']);
+        gulp.watch('scss/bootstrap.scss',['scss6']);
 })
 
 
