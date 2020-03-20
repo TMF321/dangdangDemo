@@ -1,12 +1,12 @@
 [
-    {"id":0,"img":"../images/1-1.jpg","title":"狼图腾（精装修订)","price":60.00},
-	{"id":1,"img":"../images/1-11.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":2,"img":"../images/1-12.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":3,"img":"../images/1-13.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":4,"img":"../images/1-14.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":5,"img":"../images/1-15.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":6,"img":"../images/1-16.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":7,"img":"../images/1-17.jpg","title":"狼图腾（精装修订)","price":60.00},
-    {"id":8,"img":"../images/1-18.jpg","title":"狼图腾（精装修订)","price":60.00},
-	{"id":9,"img":"../images/1-2.jpg","title":"狼图腾（精装修订)","price":60.00}
+    {"id":0,"img":"images/1-1.jpg","title":"狼图腾（精装修订)","price":60.00},
+	{"id":1,"img":"images/1-11.jpg","title":"狼图腾（精装修订)","price":35.00},
+    {"id":2,"img":"images/1-12.jpg","title":"狼图腾（精装修订)","price":95.00},
+    {"id":3,"img":"images/1-13.jpg","title":"狼图腾（精装修订)","price":135.00},
+    {"id":4,"img":"images/1-14.jpg","title":"狼图腾（精装修订)","price":25.50},
+    {"id":5,"img":"images/1-15.jpg","title":"狼图腾（精装修订)","price":70.00},
+    {"id":6,"img":"images/1-16.jpg","title":"狼图腾（精装修订)","price":66.00},
+    {"id":7,"img":"images/1-17.jpg","title":"狼图腾（精装修订)","price":99.80},
+    {"id":8,"img":"images/1-18.jpg","title":"狼图腾（精装修订)","price":42.50},
+	{"id":9,"img":"images/1-2.jpg","title":"狼图腾（精装修订)","price":15.80}
 ]

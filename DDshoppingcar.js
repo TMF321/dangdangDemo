@@ -1,7 +1,6 @@
-(function shoping(){
+define(["parabola", "jquery", "jquery-cookie"], function(parabola, $){
+    function download(){
     sc_num(); //计算一个购物车中商品的数量
-    sc_msg(); //加载一下购物车的数据
-
     //1.通过ajax下载数据   dataType
     $.ajax({
         type:'get',
@@ -29,6 +28,7 @@
             console.log(msg);
         }
     })
+}
 
     //给页面上的购物车按钮添加点击事件
     //ajax后添加的节点，添加事件，一般用事件委托添加
@@ -36,8 +36,8 @@
     1、cookie最大4kb，尽可能少的信息存储商品
         直接存储 商品的id 和 商品的数量 键 goods  值 [{id:id,num:1},{id:id,num:1}]
     2、cookie只能存储字符串  将数据结构转成json格式字符串存储进去
-*/
-
+*/ 
+function addToCart(){
     $('.goods_box ul').on('click', '.sc_btn', function(){
         var id = this.id;
         //1.之前是否添加过该商品
@@ -70,12 +70,14 @@
 
         //alert($.cookie('goods'));
         sc_num();//计算一个购物车中商品数量
-        sc_msg();//重新加载一下购物车中数据
 
         //进行抛物线
         ballMove(this);
+        
     })
+}
 
+function rightCartEvent(){
     //给购物车中删除的按钮添加点击事件
     $('.sc_right ul').on('click','.delete_goodsBtn',function(){
         //获取当前商品的div
@@ -143,8 +145,10 @@
         $(this).stop(true).animate({right: 0}, 500);
     })
     $('.sc_right').mouseleave(function(){
-        $(this).stop(true).animate({right: -270}, 500);
+        $(
+            this).stop(true).animate({right: -270}, 500);
     })
+}
 
 
     //封装一个可以进行抛物线运动的函数
@@ -154,9 +158,8 @@
         $('#ball').css({
             left: $(Btn).offset().left,
             top: $(Btn).offset().top,
-            display: 'block'
+            display: 'block',
         })
-
         //计算偏移位置
         var X = $('.sc_right .sc_pic').offset().left - $(Btn).offset().left;
         var Y = $('.sc_right .sc_pic').offset().top - $(Btn).offset().top;
@@ -169,7 +172,7 @@
             curvature: 0.0007,
             callback:function(){
                 $('#ball').hide();
-            }
+            }          
         })
         bool.start();
     }
@@ -181,10 +184,7 @@
     商品的详细信息，在服务器的数据源里。存放的是全部商品的数据。
     【注】根据cookie中存储的数据，在所有商品信息中，将加入购物车的这部分信息单独提取出来
 */
-
-     function sc_msg(){
-         //清空上一次的数据
-         //$('.sc_right ul').html('');
+function rightCart(){ 
          $('.sc_right ul').empty(); //清除所有的子节点
 
          $.ajax({
@@ -200,12 +200,12 @@
                      for(var i = 0; i < arr.length; i++){
                          for(var j = 0; j < cookieArr.length; j++){
                              if(arr[i].id == cookieArr[j].id){
-                                 arr[i].title == cookieArr[j].title;
-                                 arr[i].num ==  cookieArr[i].num
-                                 newArr.push(arr[i]);
+                                arr[i].num == cookieArr[j].num;
+                                newArr.push(arr[i]);
                              }
                          }
                      }
+                }
                      for(var i = 0; i < newArr.length; i++){
                          //创建节点，添加到购物车里
                          var node = $(`<li id="${newArr[i].id}">
@@ -220,16 +220,16 @@
                             <div class="sc_goodsNum">
                                 <button>+</button>
                                 <button>-</button>
-                            <span>商品数量：${newArr[i].num}</span></div>
+                            <span>商品数量:${newArr[i].num}</span></div>
                         </li>`);
                         node.appendTo($('.sc_right ul'));
-                     }
                  }
              },
              error:function(msg){
                  console.log(msg);
              }
          })
+
      }
 
 
@@ -241,12 +241,18 @@
          if(cookieStr){
              var sum = 0;
              var cookieArr = JSON.parse(cookieStr);
-             for(var i =0; i < cookieArr.length; i++){
-                 sum += cookieArr[i].num;
+             for(var i = 0; i < cookieArr.length; i++){
+                sum += cookieArr[i].num;
              }
              $('.sc_right .sc_num').html(sum);
          }else{
              $('.sc_right .sc_num').html(0);
          }
      }
-})();
+     return{
+        download: download,
+        addToCart: addToCart,
+        rightCart: rightCart,
+        rightCartEvent: rightCartEvent,
+    }   
+})
