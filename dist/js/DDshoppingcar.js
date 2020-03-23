@@ -190,9 +190,9 @@ function rightCart(){
          $.ajax({
              type:'get',
              url: '../data/data.json',
-             success:function(arr){
+             success:function(arr){              
                  //获取cookie中的数据
-                 var cookieStr = $.cookie('goods');
+                 var cookieStr = $.cookie('goods'); 
                  if(cookieStr){
                      var cookieArr = JSON.parse(cookieStr);
                      var newArr = [];
@@ -201,11 +201,13 @@ function rightCart(){
                          for(var j = 0; j < cookieArr.length; j++){
                              if(arr[i].id == cookieArr[j].id){
                                 arr[i].num == cookieArr[j].num;
-                                newArr.push(arr[i]);
+                                newArr.push(arr[i]);                             
                              }
                          }
                      }
                 }
+                
+
                      for(var i = 0; i < newArr.length; i++){
                          //创建节点，添加到购物车里
                          var node = $(`<li id="${newArr[i].id}">
